@@ -1,0 +1,153 @@
+/* --- Font Setup --- */
+@font-face {
+    font-family: 'Creato Display';
+    src: url('/fonts/CreatoDisplay-Regular.woff2') format('woff2'); /* Update path */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('/fonts/CreatoDisplay-Bold.woff2') format('woff2'); /* Update path */
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Main Section Styles --- */
+.sw-wrapper {
+    width: 100%;
+    background-color: #F4F4F4; /* Light grey page background */
+    color: #111111;
+    font-family: 'Creato Display', sans-serif;
+    padding: 80px 40px;
+    box-sizing: border-box;
+}
+
+.sw-inner-container {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+/* --- Header --- */
+.sw-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+
+.sw-heading-hero {
+    font-size: 140px;
+    line-height: 0.9;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.sw-header-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 460px;
+    padding-bottom: 15px; /* Aligns visually with the big text baseline */
+}
+
+.sw-text-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 400;
+}
+
+.sw-badge-count {
+    background-color: #111111;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 50px;
+    min-width: 24px;
+    text-align: center;
+}
+
+/* --- Grid System --- */
+.sw-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px; /* Gap between the cards */
+}
+
+/* --- Card Component --- */
+.sw-card {
+    position: relative; /* Essential for absolute positioning of labels */
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Fixed aspect ratio for consistency */
+    border-radius: 15px; /* The specific rounded corners from design */
+    overflow: hidden; /* Clips the image to the rounded corners */
+    background-color: #E5E5E5; /* Placeholder color */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.sw-card:hover {
+    transform: translateY(-5px);
+}
+
+/* The Image */
+.sw-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the box perfectly */
+    display: block;
+}
+
+/* The Text Overlay */
+.sw-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 30px; /* Spacing from the bottom/side edges */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none; /* Allows clicks to pass through to the card */
+    z-index: 2;
+}
+
+.sw-lbl {
+    font-size: 18px;
+    font-weight: 600; /* Medium weight */
+    color: #111111;
+    letter-spacing: -0.02em;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .sw-heading-hero { font-size: 100px; }
+    .sw-top-bar { margin-bottom: 60px; }
+}
+
+@media (max-width: 768px) {
+    .sw-wrapper { padding: 60px 24px; }
+    
+    .sw-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    .sw-heading-hero { font-size: 70px; }
+    
+    .sw-header-info {
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
