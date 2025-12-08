@@ -494,4 +494,3 @@ body {
 ---
 
 **Pyre** — Clean portfolio gallery for creative professionals.
- 
