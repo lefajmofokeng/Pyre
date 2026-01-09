@@ -5,7 +5,7 @@ Pyre is a minimalist portfolio gallery component showcasing selected work in a c
 
 ## Live Demo
 
-[View Pyre](https://thisislefa.github.io/Pyre)
+[View Pyre](https://lefajmofokeng.github.io/Pyre)
 
 ---
 
