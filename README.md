@@ -3,6 +3,8 @@
 ## Overview
 Pyre is a minimalist portfolio gallery component showcasing selected work in a clean 2×2 grid. Designed for designers and creatives, it features large typography, image cards with overlays, and a refined aesthetic.
 
+<img width="1588" height="1735" alt="lefajmofokeng github io_Pyre_" src="https://github.com/user-attachments/assets/3563dfe5-e070-4523-8670-00931be6f65a" />
+
 ## Live Demo
 
 [View Pyre](https://lefajmofokeng.github.io/Pyre)
